@@ -12,3 +12,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media (max-width: 990px){
+  .blog-image {
+      float: inherit!important;
+                          }
+  
+  }
+
+.navbar {
+  position: relative;
+  margin-bottom: 0px!important;
+  }
+
+  html, body {
+      font-family: Open Sans;
+      font-size: 18px;
+      line-height: 28px;
+      scroll-behavior: smooth;
+  }
+  
+.overlay {
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  background-color: #00000075;
+  width: 100%;
+  padding: 50px;
+ 
+}
+
+.MainContainer {
+  perspective: 2px;
+  transform-style: preserve-3d;
+  height: 88vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+  padding: 65px;
+}
+
+.Content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+p {
+  margin: 75px 0;
+}
+
+
+
+.column-summary-image img {
+  margin-top: 12px;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: linear-gradient(#1515153d,transparent), url(https://wallpaperaccess.com/full/331727.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.column-summary-image img{
+  width:100%;
+}
+
+.Gallery-heading,.Blog-heading, .overview-heading { 
+  font-size: 50px;
+  padding-bottom: 60px;
+  padding-top: 160px;
+}
+.overview-heading { 
+      font-size: 50px;
+      padding-bottom: 20px;
+      padding-top: 70px;
+  }
+.overview-content {
+  font-size: 16px;
+}
+
+.gallery-style{
+   padding-bottom: 10px;
+}
+
+.gallery-image {
+  padding-bottom: 10px;
+
+}
+
+.blog-row-style{
+  padding:40px 0px 40px 0px;
+  border-bottom: solid 2px #ededed;
+}
+#blog-entry-header {
+  font-weight: 700;
+  font-size: 27px;
+}
+
+#blog-content {
+  padding-top: 15px;
+  font-style: italic;
+}
+
+.blog-image {
+    float: right;
+}
+

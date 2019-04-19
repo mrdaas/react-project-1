@@ -23,9 +23,17 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -37,5 +45,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      $(function() {
+          var documentEl = $(document),
+          fadeElem = $('.fade-scroll');
+  
+          documentEl.on('scroll', function() {
+          var currScrollPos = documentEl.scrollTop();
+  
+          fadeElem.each(function() {
+              var $this = $(this),
+              elemOffsetTop = $this.offset().top;
+              if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 -(currScrollPos-elemOffsetTop)/400);
+  
+          }); 
+      });
+  });
+</script> 
+    
   </body>
 </html>
